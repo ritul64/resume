@@ -1,1 +1,84 @@
-<p> helllllooooo<p>
+\documentclass[a4paper,10pt]{article}
+%-----------------------------------------------------------
+\usepackage[top=0.75in, bottom=0.75in, left=0.55in, right=0.85in]{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{palatino}
+\usepackage{tabularx}
+\fontfamily{SansSerif}
+\selectfont
+ 
+\usepackage[T1]{fontenc}
+\usepackage
+%[ansinew]
+[utf8]
+{inputenc}
+ 
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=9.75in
+\raggedbottom
+ 
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+ 
+\pagestyle{empty}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+%-----------------------------------------------------------
+ 
+\begin{document}
+\hspace{0.5cm}\\[-0.2cm]
+ 
+\textbf{Ritul pandey} \\
+\indent Email-id : \textbf{\url{ritulpandey100@gmail.com}} \\
+\indent Mobile No.: \textbf{8604239699}, \ \\
+\indent \textbf{\url{https://github.com/ritul64}}\\
+ 
+\resheading{\textbf{ACADEMIC DETAILS} }\\[\lsep]
+\\
+%\begin{table}[ht!]
+%\begin{center}
+\indent \rule{6.8in}{0.4pt}\\
+\indent \begin{tabular}{ l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} }
+\noindent \textbf{Year} & \textbf{Degree/Exam} & \textbf{Institute} & \textbf{GPA/Marks(\%)}\\
+Aug, 2022 - Pres & B.TECH in Computer Science & Graphic Era University Dehradun & 8.30/10\\
+2021 & 12th ISC & Sheiling House School & 92.50 \% \\
+2019 & 10th ICSE & Sheiling House School & 87.20 \%\\
+ 
+\end{tabular}
+\indent \rule{6.8in}{0.4pt}
+%\end{center}
+%\end{table}
+\\
+
+ 
+\resheading{\textbf{PROJECTS} }\\[\lsep]
+\begin{itemize}
+\setlength\itemsep{0.5em}
+\item \textbf{Face Recognition-Based Attendance System} : Built a system to automate attendance marking using real-time face recognition. Utilized OpenCV and Haar cascades for face detection and recognition. Implemented features like CSV-based attendance export and a user-friendly interface.
+\item \textbf{Currency Converter} : Developed a GUI-based currency converter using Java Swing to provide real-time exchange rates. Integrated an external API for accurate and up-to-date conversion rates. Designed the interface for seamless user experience and efficient currency calculations.
+\item \textbf{Sign Language Recognition System} : Developed a real-time hand gesture recognition system to translate sign language into text using a webcam. Trained a model with MobileNetV2 and Google Teachable Machine for recognizing alphabets and special gestures. Designed an interactive GUI to form words and sentences from recognized gestures.
+\end{itemize}
+ 
+\resheading{\textbf{TECHNICAL SKILLS}}\\[\lsep]
+\begin{itemize}
+\setlength\itemsep{0em}
+\item \noindent \textbf{Languages}: Python, Java, C++, C, HTML, SQL.
+\item \noindent \textbf{Tools and Frameworks}: OpenCV, Flask, Tkinter, Swing, \LaTeX.
+\item \noindent \textbf{Machine Learning Tools}: TensorFlow, Keras, scikit-learn, Google Teachable Machine.
+\end{itemize}
+
+
+
+
+\end{document}
